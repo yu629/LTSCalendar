@@ -14,6 +14,6 @@
 
 
 
-- (void)initUI;
+- (void)lts_InitUI;
 - (NSDateFormatter *)dateFormatter;
 @end

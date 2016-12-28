@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self initUI];
+    [self lts_InitUI];
 }
 - (void)initUI{
     self.calendarView = [[LTSCalendarView alloc]initWithFrame:self.view.bounds];

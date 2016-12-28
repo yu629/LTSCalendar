@@ -26,7 +26,7 @@
     
   
 }
-- (void)initUI{
+- (void)lts_InitUI{
     [super initUI];
     self.calendarView.frame = CGRectMake(0, 200, self.view.frame.size.width, self.view.frame.size.height-200);
 }
