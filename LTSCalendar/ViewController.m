@@ -74,8 +74,7 @@
 }
 
 - (IBAction)previousMonth:(id)sender {
-    [self.calendarView.calendar setCurrentDate:[NSDate date]];
-//    [self.calendarView.calendar loadPreviousPage];
+    [self.calendarView.calendar loadPreviousPage];
 }
 - (IBAction)monday:(id)sender {
     self.calendarView.calendar.calendarAppearance.firstWeekday = 2;
