@@ -2,16 +2,15 @@
 仿钉钉 管理日历
 
 ![image](https://github.com/BossLee1220/LTSCalendar/blob/master/gif.gif)
-#使用方法
-新建一个类(遵守协议 LTSCalendarEventSource,UITableViewDataSource,UITableViewDataSource 才有相应代码提示)   继承自 LTSCalendarBaseViewController 
-   例如
-   
-   - (void)lts_InitUI{
-    [super lts_InitUI];
-    self.calendarView.frame = CGRectMake(0, 200, self.view.frame.size.width, self.view.frame.size.height-200);
-    //添加一下自定义视图
+##使用方法
+###新建一个类(遵守协议 LTSCalendarEventSource,UITableViewDataSource,UITableViewDataSource 才有相应代码提示)   继承LTSCalendarBaseViewController 重写方法 
+  
+    - (void)lts_InitUI{
+     [super lts_InitUI];
+     self.calendarView.frame = CGRectMake(0, 200, self.view.frame.size.width, self.view.frame.size.height-200);
+     //添加一下自定义视图
     }
-     
+      
 ##基础样式（具体样式见类 LTSCalendarAppearance.h）
 设置完样式之后注意  calendarView.calendar reloadAppearance 刷新
 
