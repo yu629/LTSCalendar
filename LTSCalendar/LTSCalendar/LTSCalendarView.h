@@ -30,6 +30,8 @@
 // 手指离开 屏幕 tableView 的offectY
 @property (nonatomic,assign)CGFloat dragEndOffectY;
 
+///回到今天
+- (void)backToToday;
 
 //回到全部显示初始位置
 - (void)showAllView:(BOOL)animate;

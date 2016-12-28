@@ -155,6 +155,11 @@
 }
 
 
+- (void)backToToday{
+    
+    [self.calendar setCurrentDate:[NSDate date]];
+    
+}
 
 - (void)layoutSubviews{
     
