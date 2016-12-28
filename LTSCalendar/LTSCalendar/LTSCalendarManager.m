@@ -106,7 +106,7 @@
     
     
     [self.contentView setCurrentDate:currentDate];
-    
+    [self setCurrentDateSelected:currentDate];
     
     [self repositionViews];
     //刷新数据

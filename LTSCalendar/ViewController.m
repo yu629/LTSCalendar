@@ -27,7 +27,7 @@
   
 }
 - (void)lts_InitUI{
-    [super initUI];
+    [super lts_InitUI];
     self.calendarView.frame = CGRectMake(0, 200, self.view.frame.size.width, self.view.frame.size.height-200);
 }
 
@@ -74,7 +74,8 @@
 }
 
 - (IBAction)previousMonth:(id)sender {
-    [self.calendarView.calendar loadPreviousPage];
+    [self.calendarView.calendar setCurrentDate:[NSDate date]];
+//    [self.calendarView.calendar loadPreviousPage];
 }
 - (IBAction)monday:(id)sender {
     self.calendarView.calendar.calendarAppearance.firstWeekday = 2;
