@@ -20,7 +20,7 @@
     [super viewDidLoad];
     [self lts_InitUI];
 }
-- (void)initUI{
+- (void)lts_InitUI{
     self.calendarView = [[LTSCalendarView alloc]initWithFrame:self.view.bounds];
     [self.view addSubview:self.calendarView];
     self.calendarView.tableView.delegate = self;
